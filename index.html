@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+      <title>home page</title>
+
+</head>
+<body>
+
+    <!-- ...............................download app sectio .................................. -->
+    <div id="download_nav">
+         <div id="logo"> 
+            <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="">
+            <p>⭐️⭐️ FLAT Rs. 100 OFF on your first order! ⭐️⭐️</p>
+            <div class="usecode">
+                <span id="use"  style="color:blue;font-weight:bold">Use Code:</span>
+                <span id="code"  style="color:rgb(255, 0, 89);font-weight:bold"> APPFIRST</span>
+            </div>
+        </div>
+         <div id="btn"> 
+            <a href="https://dl.purplle.com/tQVMyvzFuab">DOWNLOAD APP</a>
+        </div> 
+    </div>
+
+    <!-- ...............................support || track order .................................. -->
+   <div id="track_order"> <span>
+
+   </span>
+     <img src="./images/phone_iphone_FILL0_wght400_GRAD0_opsz48.png" alt="">    
+ 
+        <a href="https://dl.purplle.com/tQVMyvzFuab">DOWNLOAD APP     |  </a> 
+      
+        <P> TRACK ORDER   |</P>
+        <p>SUPPORT</p> 
+  
+   </div>
+<!--========================================================== search and purple div -->
+
+<div id="serach section">
+
+<div></div>
+<div></div>
+<div></div>
+</div>
+ <div id="srch">
+    <div id="lookingfor">
+        <input type="text" placeholder="What are you looking for?..">
+    </div>
+    <div id="purple">
+        <img  alt="purplle logo" lazysrcvisible="visible" width="110" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" class="visible">
+    </div>
+    <div  id="heart">
+      <img src="/images/favorite_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img src="/images/sentiment_satisfied_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img src="/images/shopping_cart_checkout_FILL0_wght400_GRAD0_opsz48.png" alt="">
+    </div>
+    
+ </div> 
+<div id="category">
+    <ul> <a href="">SHOP CATEGORIES</a></ul>
+    <ul> <a href="">BRANDS</a></ul>
+    <ul><a href="">OFFERS</a></ul>
+    <ul> <a href="">NEW</a></ul>
+    <ul><a href="">SPLURGE</a></ul>
+    <ul><a href="">MAGAZINE</a></ul>
+    <ul> <a href=""> ELITE OFFERS</a></ul>
+
+
+</div>
+<!--============================ image banner -->
+<div id="banner">
+<img class="mySlides" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1680153474_web.jpg">
+<img class="mySlides" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1680168530_web-banner.jpg">
+<img class="mySlides" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1680184656_1294x418.gif">
+<img class="mySlides" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1680164781_top-carousal-web.jpg">
+<img class="mySlides" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1679914902_pu_webhp.gif">
+
+</div>
+  
+<div id="sara">
+    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1678881030_1280x272-web-1.jpg" alt="">
+</div>
+</body>
+<script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
