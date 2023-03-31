@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Purplle.com:Buy Cosmetic Product</title>
+  <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png"
+      hreflang="en-in"
+    />
+
+  <link rel="stylesheet" href="Payment.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- navbar upper box -->
+  <div class="uppnav">
+    <!-- navbar box -->
+    <nav id="navbar">
+
+      <!-- LOGO BOX  -->
+      <div class="logo">
+        <img src="https://media4.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="purplle.com" width="70%"
+          height="100%">
+        <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" width="30%"
+          height="70%">
+      </div>
+      <!-- SECURITE DETAIEL -->
+      <div class="securite">
+        <img src="lock1.png" alt="" width="5%" height="70%">
+        <span>Secure Payment</span>
+        <img src="stare.png" alt="" width="5%" height="70%">
+        <span>100% Genuine Products</span>
+        <img src="cash.png" alt="" width="5%" height="70%">
+        <span>Cash On Delivery</span>
+      </div>
+    </nav>
+  </div>
+  <!-- bottom part -->
+  <div class="mainbox">
+
+    <!-- left part -->
+    <div class="left">
+      <div class="status">
+        <img src="status.png" alt="" height="100%" width="100%">
+      </div>
+      <div class="form">
+        <h3>Add New Address</h3>
+        <form action="">
+          <select required>
+            <option value="mr">Mr</option>
+            <option value="">Miss</option>
+            <option value="">Mrs</option>
+          </select>
+          <input type="text" placeholder="Name*" id="name" required>
+          <input type="text" placeholder="Pincode*" class="pincode" required>
+          <input type="text" placeholder="Address*" class="pincode" required>
+          <input type="text" placeholder="Landmark" class="pincode">
+          <input type="text" placeholder="City" class="city" required>
+          <input type="text" placeholder="State" class="city" required>
+          <input type="text" placeholder="Mobile" class="city" required>
+          <br>
+          <label class="notes">Address type:</label> <select>
+            <option value="home">Home</option>
+            <option value="office">Office</option>
+            <option value="other">Other</option>
+          </select>
+          <p class="notes">Address type preferences are used to plan your delivery.However,shipments can sometimes
+            arrive early or latter then planned.</p>
+
+          <input type="submit" value="SAVE & CONTINUE" class="submit">
+        </form>
+      </div>
+    </div>
+    <!-- right part -->
+    <div class="right">
+      <!-- top need help number box -->
+      <div class="help">
+        <p class="helptext">Need Help? 86555 00222</p>
+      </div>
+      <!-- login detail box -->
+      <p>Login Details</p>
+      <div class="login">
+        <p class="email">
+          ambaliyadhruv202@gmail.com
+        </p>
+        <p class="change">
+          CHANGE
+        </p>
+      </div>
+      <hr>
+      <!-- cartproductbox before product -->
+      <div class="cartproductbox">
+        <div>
+          Show Items in Order
+        </div>
+        <div id="plus">+</div>
+
+      </div>
+      <!-- cart main box -->
+      <div class="outercart">
+        <!-- <div class="cart">
+      
+         
+       </div>
+   </div> -->
+      </div>
+      <br>
+      <!-- cartproductbox after product -->
+      <div class="cartproductboxAfter">
+        <!-- <div>
+              Hide Items in Order
+          </div>
+          <div id="plus">-</div> -->
+
+      </div>
+      <hr>
+      <!-- price details box -->
+      <div class="price">
+        <table>
+          <!-- price detais row -->
+          <tr>
+            <td><label class="pricedetais"> Detais</label></td>
+            <td></td>
+          </tr>
+          <!-- total MRP row -->
+          <tr>
+            <td>Total MRP:</td>
+            <td class="TotalMRP"></td>
+          </tr>
+          <!-- Saving on MRP row -->
+          <tr>
+            <td>Saving on MRP:</td>
+            <td><label class="applied">-83</label></td>
+          </tr>
+          <!-- Subtotal row -->
+          <tr>
+            <td>Subtotal:</td>
+            <td class="subtotal"></td>
+          </tr>
+          <!-- Shipping Charges row -->
+          <tr>
+            <td>Shipping charges:</td>
+            <td>49</td>
+          </tr>
+          <!-- coupon Discount row -->
+          <tr>
+            <td>Coupon Discount:</td>
+            <td><label class="applied" id="save">Applied</label></td>
+          </tr>
+        </table>
+        <hr>
+        <!-- Order total box -->
+        <div>
+          <table>
+            <!-- Order total row -->
+            <tr>
+              <td><label class="ordertotal">Order total:</label></td>
+              <td><label class="orderMRP"></label></td>
+            </tr>
+            <!-- You save row -->
+            <tr>
+              <td>You save:</td>
+              <td><label class="applied" id="save2"></label></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", moveOn);
+
+  function moveOn(event) {
+    event.preventDefault();
+    window.location.href = "Checkout.html"
+  }
+
+  document.querySelector(".cartproductbox").addEventListener("click", addOn);
+
+  var arr=JSON.parse(localStorage.getItem("cartsItems")) || [];
+ 
+  calculation();
+      //this data without promocode
+  function calculation() {
+    // MRP calculation part
+    var MRP = arr.map(function (el) {
+      return el.price;
+    })
+
+
+    var total = MRP.reduce(function (cur, el) {
+      return Number(cur) + Number(el);
+    })
+
+    document.querySelector(".TotalMRP").textContent = total;
+
+    // subtotal calculation
+    var subtotal = total - 83;
+    var finaltotal=subtotal+49
+    document.querySelector(".subtotal").textContent = subtotal;
+    document.querySelector(".orderMRP").textContent = finaltotal;
+
+    // discount of promocode section
+    var discount = Math.floor(finaltotal * 0.30)
+    var orderTotal = finaltotal - discount;
+
+
+  }
+
+  //  this data is with use promocode
+  var data = [];
+  document.querySelector("#save").addEventListener("click", appliedOn);
+  function appliedOn() {
+
+    var coupan = prompt("enter your coupan code");
+    if (coupan === "APPFIRST") {
+      alert("wow!");
+      var MRP = arr.map(function (el) {
+        return el.price;
+      })
+
+
+      var total = MRP.reduce(function (cur, el) {
+        return Number(cur) + Number(el);
+      })
+
+      document.querySelector(".TotalMRP").textContent = total;
+
+      // subtotal calculation
+      var subtotal = total - 83;
+      var finaltotal=subtotal+49
+      document.querySelector(".subtotal").textContent = subtotal;
+      document.querySelector(".orderMRP").textContent = finaltotal;
+
+      // discount of promocode section
+      var discount = Math.floor(finaltotal * 0.30)
+      var orderTotal = finaltotal - discount;
+      document.querySelector("#save").textContent = "-30%";
+      document.querySelector(".orderMRP").textContent = orderTotal;
+      document.querySelector("#save2").textContent = discount + 83;
+      // local storage;
+      var mrpdata = {
+        coupan: "-30%",
+        order_total: orderTotal,
+        saving: discount + 83,
+        subtotal:subtotal,
+        total:total,
+      }
+      data.push(mrpdata);
+      localStorage.setItem("MRPdata", JSON.stringify(data));
+
+    }
+    else {
+      alert("Invaild");
+    }
+  }
+
+ function addOn(){
+   Display(arr)
+ }
+
+
+  // createElement part
+
+  function Display(arr) {
+            
+    arr.map(function (elem, index) {
+      document.querySelector(".cartproductbox").textContent = "";
+      var cart = document.createElement("div");
+      var imgbox = document.createElement("div");
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.image)
+      img.style.height = "100%";
+      img.style.width = "100%";
+      var desbox = document.createElement("div");
+      var prodes = document.createElement("div");
+      var protext = document.createElement("div");
+      protext.textContent = elem.name;
+      var proMRP = document.createElement("div");
+      proMRP.textContent = elem.price;
+      var buttdes = document.createElement("div");
+      var qty = document.createElement("div");
+      var qutiti = document.createElement("select");
+      var o1 = document.createElement("option");
+      o1.textContent = "1";
+      var o2 = document.createElement("option");
+      o2.textContent = "2";
+      var o3 = document.createElement("option");
+      o3.textContent = "3";
+      var o4 = document.createElement("option");
+      o4.textContent = "4";
+      var remove = document.createElement("div");
+      remove.textContent = "remove";
+      remove.addEventListener("click", function () {
+        subtrect(elem, index)
+      });
+
+      document.querySelector(".outercart").append(cart);
+      cart.append(imgbox, desbox)
+      imgbox.append(img);
+      desbox.append(prodes, buttdes);
+      prodes.append(protext, proMRP);
+      buttdes.append(qty, remove);
+      qty.append(qutiti)
+      qutiti.append(o1, o2, o3, o4);
+     
+
+    })
+    // hide Item in order
+    document.querySelector(".cartproductboxAfter").textContent = "";
+    var div = document.createElement("div");
+    var plus = document.createElement("div");
+    document.querySelector(".cartproductboxAfter").append(div, plus);
+
+    div.textContent = "Hide Items in Order";
+    plus.textContent = "-";
+    calculation()
+  }
+
+
+  document.querySelector(".cartproductboxAfter").addEventListener("click", removeOn);
+
+  function removeOn() {
+    console.log("hello");
+    document.querySelector(".outercart").textContent = "";
+    // Show Item in order
+    var div = document.createElement("div");
+    var plus = document.createElement("div");
+    document.querySelector(".cartproductbox").append(div, plus);
+
+    div.textContent = "Show Items in Order";
+    plus.textContent = "+";
+    document.querySelector(".cartproductboxAfter").textContent = "";
+  }
+
+    // remove element section
+
+  function subtrect(elem, index) {
+    console.log(elem, index);
+    arr.splice(index, 1);
+    localStorage.setItem("cartsItems",JSON.stringify(arr));
+    document.querySelector(".outercart").textContent = "";
+    Display(arr);
+  }
+
+  // Email Change function
+  document.querySelector(".change").addEventListener("click",changeOn);
+
+function changeOn(){
+  console.log("hello");
+  document.querySelector(".email").textContent="";
+  var input=document.createElement("input");
+  input.className="newEmail";
+  var but=document.createElement("button");
+  but.textContent="Change";
+  but.id="but"
+  document.querySelector(".email").append(input,but);
+  document.querySelector("#but").addEventListener("click",butOn);
+}
+     var emailarr=[]
+function butOn(){
+    var New_Email=document.querySelector(".newEmail").value;
+    document.querySelector(".email").textContent="";
+    document.querySelector(".email").textContent=New_Email;
+    var ChangeEmail={
+      NewEmail:New_Email,
+    }
+     emailarr.push(ChangeEmail);
+     localStorage.setItem("New",JSON.stringify(emailarr));
+}
+</script>
