@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+    <script src="https://kit.fontawesome.com/0732da7b36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- nav bar of checkout page -->
+
+    <div id="cart_nav">
+        <div>
+            <img src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="Purplle" class="p_logo">
+            <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" class="p_logo">
+        </div>
+        <div>
+            <!-- <img src="" alt=""> -->
+            <!-- <i class="far fa-heart"></i>
+            <i class="far fa-smile"></i> -->
+            <img src="https://cdn-icons.flaticon.com/png/128/2811/premium/2811806.png?token=exp=1639558380~hmac=30e6a4e307eb4176ad5663443e0560c1" alt="emote" class="emote">
+           <img src="https://cdn-icons-png.flaticon.com/128/1216/1216575.png" alt="" class="emote">
+            <img src="https://cdn-icons.flaticon.com/png/128/3404/premium/3404134.png?token=exp=1639558600~hmac=2f755801fb3fb759211900e0da6f0207" alt="emote" class="emote">
+        </div>
+    </div>   
+
+    <!-- created container for both  left_item list and Right_subtotal page -->
+
+    <div class="container">
+
+        <!-- left side item list section -->
+
+        <div id="item_list">
+            <div>Avialable Offers(1)</div>
+
+            <!-- div for T&C -->
+            <div>
+                <p  id="gift">Choose Your Free Gift worth Rs249 on cart orders above Rs.249 across Good Vibes.Offer is not valid on Sheet Masks.T&C/View products</p>
+            </div>
+
+            <!-- div for counting items in cart -->
+            <div>
+                <div>My Cart(2)</div>
+                <div>Shop More > </div>
+            </div>
+
+            <!-- parent div for elite and text -->
+            <div id="gift_box">
+                <div>   
+                 <p>You are missing out!</p>
+                  <p>Join Elite today and get a free gift worth at least Rs 200</p>
+                </div>
+
+                <!--  div for joining elite member -->
+                <div>
+                    <div>sign in to:</div>
+                    <div id="elite">JOIN ELITE TODAY</div>
+                </div>
+            </div>
+
+            <!--left side cart items detail -->
+
+            <div class="added_items_detail">
+                
+                <!-- parent div for image and details -->
+                <div class="prod">
+
+                    <!-- div for 1st product image -->
+
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/215460/good-vibes-toner-rose-glow-120-ml-1_7_display_1623648076_80922644.jpg" alt="" class="prod_img">
+                    </div >
+                    <!-- di for 1st product details -->
+
+                    <div>
+                        <p>Good Vibes Ross Glow Toner | Lightweight,Brightening | With Honey | No Alchol</p>
+                      <span>Qty:</span>
+
+<!-- quantity select div -->
+
+                      <select name="" id="select_qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                    <!-- 1st product price  -->
+                    <div>₹1165</div>
+                </div>
+                
+            </div>
+            <div class="rem_span">
+                <span>
+                    <a href="">Remove</a>
+                    <a href="">Move to Wishlist</a>
+                   </span> 
+            </div>
+          </div>        
+            <!-- 2nd product display div -->
+
+            <!-- <div > -->
+                <!-- <div class="prod"> -->
+
+            
+                    <!-- <div>
+                    <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/248013/st-botanica-hyaluronic-acid-hydra-boost-face-gel-50-g-boosts-hydration-for-a-smooth-and-supple-skin_2_display_1625807985_84bba18c.jpg" alt="" class="prod_img">
+                    </div> -->
+
+                    
+                    <!-- <div>
+                        <p>Good Vibes Ross Glow Toner | Lightweight,Brightening | With Honey | No Alchol</p>
+                        <span>Qty:</span>
+
+                        
+
+                        <select name="" id="select_qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        
+                    </div> -->
+
+                    
+
+                    <!-- <div>₹166</div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+<!--         
+            <div class="rem_span">
+               <span>
+                <a href="">Remove</a>
+                <a href="">Move to Wishlist</a>
+               </span>
+            </div> -->
+
+        <!-- </div> -->
+
+        <!-- right side cart section  -->
+
+        <div id="sub_total">
+
+            <!--parent div for shield logo and text about safety-->
+            <div id="safe">
+              <div>
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515664301_shield.png" alt="" id="safe_logo">  
+              </div>
+              <div>
+                  <p>100% Safe Payment</p>
+                  <p>Genuine Products | Easy Returns</p>
+              </div> 
+              </div> 
+
+
+              <!-- div after Safe Payment line -->
+              <div class="form_container">
+
+                <!-- div for pincode -->
+                  <div>
+                      <div>Enter Pincode</div>
+                      <div class="let_col let_size">Check Delivery</div>
+                  </div>
+
+                  <!-- div for enter coupon code -->
+                  <div>
+                      <div>Coupon</div>
+                      <div class="let_col let_size">Apply Coupon</div>
+                  </div>
+                  <div>
+                      <div>Price Details</div>
+                  </div>
+
+                  <!-- div for total mrp -->
+                  <div>
+                      <div>Total MRP:</div>
+                      <div>₹1194</div>
+                  </div>
+
+                  <!-- div for saving on mrp -->
+                  <div>
+                      <div>Saving on MRP:</div>
+                      <div class="let_col">-₹29</div>
+                  </div>
+
+                  <!-- parent div for subtotal -->
+                  <div>
+                      <div>Subtotal:</div>
+                      <div>₹1165</div>
+                  </div>
+
+                  <!-- parent div for apllying coupons -->
+                  <div>
+                      <div>Shipping charges :</div>
+                      <div>Free</div>
+                  </div>
+
+                  <!-- parent div for applying coupon -->
+                  <div>
+                      <div>Coupon Discount:</div>
+                      <div class="let_col">APPLY COUPON</div>
+                  </div>
+
+                  <!-- parent div for Order total price of products -->
+                  <div>
+                      <div>Order Total:</div>
+                      <div class="let_size">₹1165</div>
+                  </div>
+
+                  <!-- parent div for you save-->
+                  <div>
+                      <div>You Save:</div>
+                      <div class="let_col">₹29</div>
+                  </div>
+
+                  <!-- button div -->
+                  <button ><a href="address.html" id="but_col">PLACE ORDER</a></button>
+                  <div>Need Help? 865550222</div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
