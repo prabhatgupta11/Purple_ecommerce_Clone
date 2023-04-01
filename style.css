@@ -1,6 +1,7 @@
 /* ========================================top nav */
 
 #download_nav{
+  
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
     justify-content: space-around;
@@ -51,6 +52,7 @@
 }
 /* ==============================track order support */
 #track_order{
+  position: fixed;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
       height: 30px;
@@ -123,8 +125,8 @@
 #category a:link {
     text-decoration: none;
   }
-  /* ==============================banner */
-  #banner
+  /* ==============================banner============================================= */
+  /* #banner
   {
     width: 80%;
     margin: auto;
@@ -155,4 +157,645 @@
 
 */
 
+/* ======================================================free gift ==================================================================*/
 
+
+/* ========================================================slideshow============================================================================ */
+
+
+/* 
+
+ ////////////////////////////////////////////// 1st slideshow css ================= ========== */
+
+ * {
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* /////////////////////////////////////////////////////// */
+#sara{
+  width: 80%;
+  margin: auto;
+}
+
+/* //////exculisive offers============== */
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+.mysll {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+.exculisive_offer {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dot1s/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot1:hover {
+  background-color: #111111;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* ///////////////card containerr//////////////// */
+.card-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 250);
+  grid-gap: 10px;
+
+
+}
+
+.card-container>div {
+
+  margin-top: 30px;
+  box-shadow:
+      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: white;
+
+
+
+}
+
+.card-container>div>img {
+  width: 100%;
+  height: 300px;
+
+}
+
+/* <!--  top discount card container --> */
+.top-discount-card-container {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  grid-gap: 1%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.top-discount-card-container>div {
+  margin-top: 10px;
+
+}
+
+
+/* <!--  END   top discount card container --> */
+
+
+/* footer start **********************/
+h2 {
+  color: rgb(56, 54, 54);
+}
+
+th {
+  color: rgb(56, 54, 54);
+  font-size: 18px
+}
+
+
+
+/* fist parent div style -------------------start-------*/
+
+#box1 {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.mini_box1 {
+  text-align: center;
+  border-top: 0.7px solid rgb(170, 166, 166);
+  width: 33%;
+  color: rgb(104, 99, 99);
+  padding: 5px 100px 50px 100px;
+  background-color: rgb(253, 252, 252);
+}
+
+.mini_box1:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#center {
+  border-left: 0.7px solid rgb(170, 166, 166);
+  border-right: 0.7px solid rgb(170, 166, 166);
+}
+
+/* fist parent div style -------------------end-------*/
+/* second parent div style -------------------start-------*/
+
+#box2 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+  background-color: rgb(245, 246, 247);
+}
+
+.mini_box2 {
+  /* border: 1px solid red; */
+  width: 30%;
+}
+
+#image_text {
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: rgb(244, 143, 177);
+  height: 80%;
+}
+
+#short_image {
+  /* border:  1px solid red; */
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px 70px 10px 70px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+#white_text {
+  color: rgb(255, 255, 255);
+}
+
+#mobile {
+  height: 100%;
+}
+
+#video {
+  height: 79%;
+}
+
+/* style for third parent box == box3  */
+
+#box3 {
+  /* border: 1px solid red; */
+  background-color: rgb(245, 246, 247);
+  width: 90%;
+  margin: auto;
+}
+
+table {
+  border-spacing: 23px;
+  padding: 20px 100px 20px 100px;
+}
+
+td {
+  font-size: 13px;
+}
+
+/* style for fourth box == box4 */
+
+#box4 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* style for fifth parent box == box4  */
+
+#box5 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.mini_box5 {
+  display: flex;
+  justify-content: space-between;
+  /* border:  1px solid red; */
+  padding: 10px;
+  height: 40px;
+}
+
+.mini_box5>h2 {
+  height: 20px;
+  margin-top: 6px;
+  margin-right: 40px;
+}
+
+#copyright {
+  margin-left: 150px;
+}
+
+/* footer end */
+
+
+/* 
+product page  started*/
+#topnavi {
+  display: flex;
+  margin-top: 110px;
+  flex-wrap: wrap;
+}
+
+p {
+  margin-right: 10px;
+}
+
+.one {
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+#start {
+  margin-left: 160px;
+}
+
+#maindiv, #anothermain {
+  display: flex;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#subdiv1 {
+  width: 7%;
+  margin-right: 7%;
+  /* border: 1px solid blue; */
+  height: 510px;
+}
+
+#subdiv2 {
+  width: 43%;
+  margin-right: 5%;
+  /* border: 1px solid green; */
+  height: 510px;
+}
+
+#subdiv3 {
+  width: 38%;
+  /*          
+ border: 1px solid blue; */
+}
+
+.boxshadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-bottom: 10px;
+}
+
+.boxshadow>img {
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#prodtext {
+  line-height: 30px;
+  font-size: large;
+}
+
+#rating {
+  background-color: #cdd614;
+  color: white;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+p {
+  margin: 2px;
+}
+
+#price {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#strikeoff {
+  color: gray;
+  text-decoration: line-through;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: large;
+}
+
+#discount {
+  padding: 5px;
+  font-size: large;
+  color: deeppink;
+}
+
+.pink {
+  color: deeppink;
+}
+
+.gap, .pink {
+  margin-left: 8px;
+}
+
+#tc {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  padding: 10px;
+  background-color: #F6E9F6;
+  margin-bottom: 25px;
+}
+
+.tag {
+  border: 1px solid gray;
+  color: gray;
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+#last {
+  color: gray;
+}
+
+#addcart {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  color: #ff147b;
+  border: 1px solid #ff147b;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+#addcart:hover {
+  background-color: #ff147b;
+
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+#save {
+  margin-top: 15px;
+  font-size: larger;
+  padding: 10px 30px;
+  color: deeppink;
+  margin-left: 30px;
+}
+
+#saved {
+  margin-left: 232px;
+  margin-top: -15px;
+}
+
+#details {
+  margin-top: 90px;
+  /* margin-left: 25px; */
+}
+
+.samedetails {
+  margin-top: 71px;
+  margin-left: -35px;
+  margin-right: 75px;
+}
+
+#from {
+  margin-top: 62px;
+}
+
+#manu {
+  margin-left: -105px;
+  margin-top: 62px;
+}
+
+#allimages {
+  width: 56%;
+  /* border: 1px solid teal; */
+}
+
+.negative {
+  margin-top: -5px;
+}
+
+#delivery {
+  border: 1px solid gainsboro;
+  height: 300px;
+  width: 30%;
+  margin-left: 14%;
+}
+
+#info {
+  padding: 15px;
+  line-height: 30px;
+}
+
+h1 {
+  margin-left: 15px;
+  margin-right: 70px;
+}
