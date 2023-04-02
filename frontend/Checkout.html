@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Checkout</title>
+  <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png"
+      hreflang="en-in"
+    />
+
+  <link rel="stylesheet" href="Checkout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+ 
+    <!-- navbar upper box -->
+  <div class="uppnav">
+     <!-- navbar box -->
+  <nav id="navbar">
+
+    <!-- LOGO BOX  -->
+    <div class="logo">
+      <img src="https://media4.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="purplle.com" width="70%"
+        height="100%">
+      <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" width="30%"
+        height="70%">
+    </div>
+    <!-- SECURITE DETAIEL -->
+    <div class="securite">
+      <img src="lock1.png" alt="" width="5%" height="70%">
+      <span>Secure Payment</span>
+      <img src="stare.png" alt="" width="5%" height="70%">
+      <span>100% Genuine Products</span>
+      <img src="cash.png" alt="" width="5%" height="70%">
+      <span>Cash On Delivery</span>
+    </div>
+  </nav>
+</div>
+  <!-- bottom part -->
+  <div class="mainbox">
+
+    <!-- left part -->
+    <div class="left">
+      <div class="status">
+        <img src="status1.png" alt="" height="100%" width="100%">
+      </div>
+      <div class="form">
+        <h3>Credit/Debit Card</h3>
+        <form action="">
+           <input type="text" placeholder="Name on card" id="name" required>
+           <input maxlength="11" placeholder="Card number" id="cardnum" required>
+           <input maxlength="3" placeholder="CVV" id="cvv" required>
+           <br>
+           <input maxlength="2" placeholder="Expire MM" class=date required>
+           <input maxlength="4" placeholder="Expire YY" class="date" required>
+           <br>
+           <input type="checkbox" class="checkbox"><label>Save card for future use</label>
+           <br>
+           <input type="submit"  class="submit">
+        </form>
+      </div>
+    </div>
+    <!-- right part -->
+    <div class="right">
+      <!-- top need help number box -->
+     <div class="help">
+       <p class="helptext">Need Help? 86555 00222</p>
+     </div>
+     
+  
+  
+     <!-- <div class="cart">
+       image box
+       <div class="img">
+        <img src="https://media6.ppl-media.com/tr:h-150,w-150,c-at_max/static/img/product/219660/pond-s-bright-beauty-spot-less-glow-face-wash-with-vitamins-15-g_1_display_1607504420_a33a1d93.jpg" alt="" height="100%" width="100%">
+      </div>
+      description box
+      <div class="des">
+            text part
+        <div class="prodes">
+          <div class="protext">
+            Pond's bright Spot -less Glow face wash
+          </div>
+          <div class="proMRP">₹25</div>
+        </div>
+        button box
+        <div class="buttdes">
+          <div class="qty">
+          <select name="" id="qutiti">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          </div>
+          <div class="remove">remove</div>
+        </div>
+      </div>
+  </div> -->
+</div>
+    <br>
+        <!-- cartproductbox after product -->
+        <div class="cartproductboxAfter">
+         <!-- <div>
+             Hide Items in Order
+         </div>
+         <div id="plus">-</div> -->
+        
+       </div>
+     <hr>
+
+</body>
+
+</html>
+
+
+<script>
+  document.querySelector("form").addEventListener("submit",moveOn);
+
+  function moveOn(event){
+    event.preventDefault()
+    window.location.href="Otp.html"
+    // var otp = prompt("Enter OTP Sent to Your Email Id");
+    if(otp==="1234"){
+      alert("Wow ! payment is done")
+    }
+  }
+
+// coupon discount section & order total & your saving
+var data=JSON.parse(localStorage.getItem("MRPdata"));
+console.log(data);
+document.querySelector("#save").textContent=data[0].coupan;
+document.querySelector(".orderMRP").textContent=data[0].order_total;
+document.querySelector("#save2").textContent=data[0].saving;
+document.querySelector(".submit").value= ("PAY"+" "+data[0].order_total);
+document.querySelector(".subtotal").textContent=data[0].subtotal;
+document.querySelector(".TotalMRP").textContent=data[0].total;
+// createElement part
+
+
+</script>
