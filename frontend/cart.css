@@ -1,0 +1,148 @@
+    
+    /* checkout page nav bar */
+    #cart_nav{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    /* right cart section css */
+    .p_logo{
+        height: 45px;
+    }
+    .emote{
+        padding: 5px ;
+        height:35px;
+        margin-left: 40px;
+    }
+    .container  {
+        margin: auto;
+        display: flex;
+        border: 1px solid blueviolet;
+        /* height:800px; */
+        width: 1050px;
+        gap:83px;
+        font-family: 'Aqleema-Regular';
+        margin-top: 43px;
+    }
+    
+
+   
+    #sub_total{
+        height:600px;
+        width:380px;
+        border: 1px solid red;
+    }
+    #safe{
+        display:flex;
+        justify-content: space-between;
+        border:1px solid gray;
+        height: 60px;
+        line-height: 10px;
+    }
+
+   .form_container > div {
+       display: flex;
+       justify-content: space-between;
+       padding: 8px;
+       margin-top: 5px;
+      
+   }
+   .let_col{
+       color: #e40980
+   }
+
+   .let_size{
+       font-size: 18px;
+   }
+   button{
+       padding: 15px 113px;
+       background-color: #e40980 ;
+       font-size: 15px;
+       border-radius: 5px; 
+       border:none;
+       
+   }
+   
+   button+div{
+      margin-left: 82px;
+   }
+
+   #but_col{
+       color: white;
+       text-decoration-line: none;
+   }
+   #safe_logo{
+    padding: 10px 20px;
+   }
+
+
+  /* left side item list css */
+
+
+  #item_list{
+    /* height:600px; */
+    width:710px;
+    border: 1px solid palevioletred;
+}
+   
+#item_list > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    line-height: 20px;
+}
+
+ #gift{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 1px;
+ }
+
+ #elite {
+     background-color:#2c414c;
+     padding: 5px;
+     color: #dac13f;
+     border-radius: 2px;
+ }
+
+ #gift_box{
+     background-color: #fceeeb;
+     height: 45px;
+
+  
+ }
+ #gift_box > div p {
+     line-height: 5px;
+     margin-top: 5px;
+ }
+
+ .prod{
+    display: flex;
+    gap: 20px;
+ }
+
+ .prod_img{
+     height:70%;
+     width: 80px;
+ }
+
+ /* .prod_detail{
+     display: flex;
+ } */
+
+  div > span > a{
+     text-decoration: none;
+     padding:20 px;
+     margin-left:10px;
+     color: rgba(131, 124, 124, 0.966);
+ } 
+
+ .rem_span{
+     margin-left: 90px;
+ }
+ #anu:hover{
+    color: #e40980;
+ }

@@ -1,0 +1,342 @@
+#navbar {
+    /* position:fixed; */
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    /* margin-top: -20px; */
+    height: 50px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 30px -20px;
+
+
+}
+.uppnav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+* {
+    /* Zen Kurenaido  name of the font or refer to a google font*/
+    font-family: 'M PLUS 2', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: 600;
+}
+
+.logo {
+    width: 120px;
+    height: 99%;
+    /* border: 2px solid black; */
+    display: flex;
+
+
+}
+
+
+.securite {
+    border: 2px solid transparent;
+    width: 400px;
+    height: 70%;
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: space-between;
+
+}
+
+span {
+    padding: 6px;
+    color: #636363ea;
+    font-size: "Helvetica Neue", Arial, sans-serif;
+    ;
+}
+
+
+
+.mainbox {
+    /* border: 2px solid black; */
+    width: 70%;
+ 
+    margin: auto;
+    margin-top: 80px;
+    height: 1200px;
+    /* margin-top: 150px; */
+    display: flex;
+}
+
+.left {
+    width: 60%;
+    /* height: 400px; */
+    /* border: 2px solid teal; */
+}
+
+.right {
+    width: 40%;
+    margin-left: 60px;
+    /* height: 400px; */
+    /* border: 2px solid red; */
+}
+
+.status {
+    /* border: 2px solid rgb(47, 76, 165); */
+    width: 90%;
+    height: 90px;
+    margin: auto;
+}
+
+.form {
+    border: 1px solid rgb(211, 207, 207);
+    width: 100%;
+    /* height: 100%; */
+}
+
+h3 {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+#name {
+    margin-left: 10px;
+    border: none;
+    width: 75%;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+
+select {
+    border: none;
+    padding: 10px;
+}
+
+.pincode {
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.city {
+    border: none;
+    width: 43%;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+form {
+    /* border: 2px solid violet; */
+    margin-left: 20px;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+.notes {
+    line-height: 20px;
+    color: gray;
+}
+
+.submit {
+    margin-left: 35%;
+    padding: 10px 25px;
+    border: none;
+    background-color: #e40980;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+/* Right vala part */
+.help {
+    border: 1px solid rgb(211, 207, 207);
+    text-align: center;
+    height: 60px;
+}
+
+.helptext {
+    margin-top: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.email {
+    margin-top: 0px;
+    /* border: 2px solid springgreen; */
+    overflow-wrap: break-word;
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+}
+
+.change {
+    margin-top: 0px;
+    /* border: 2px solid springgreen; */
+    overflow-wrap: break-word;
+    width: 30%;
+    height: 30px;
+    text-align: right;
+    color: #e40980;
+}
+
+
+
+tr>td:nth-child(1){
+    width: 100%;
+    color:gray ;
+    font-weight: 400;
+    
+}
+
+tr>td:nth-child(2){
+  color: gray;
+    text-align: right;
+    font-weight: 400;
+    
+}
+
+.price{
+    line-height: 30px;
+}
+
+.pricedetais{
+    color: black;
+    
+}
+
+.ordertotal{
+    color: black;
+    font-size: 20px;
+}
+.orderMRP{
+    color: black;
+    font-size: 20px;
+}
+
+.applied{
+    color:#e40980 ;
+}
+
+hr{
+   size: 20px; 
+}
+.cartproductbox{
+   justify-content: space-between;
+   display: flex;
+   cursor: pointer;
+}
+
+.cartproductboxAfter{
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+ }
+
+.outercart>div{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    /* border: 2px solid black; */
+    margin-bottom: 10px;
+}
+
+.outercart>div>div:nth-child(1){
+    /* .img */
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid blue ; */
+}
+.outercart>div>div:nth-child(2){
+    /* .dec */
+    width:78% ;
+    height: 100%;
+    /* border: 2px solid teal; */
+    margin-left: 2%;
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(1){
+    /* .prodes */
+    width: 100%;
+    height: 60%;
+    /* border:2px solid tomato; */
+    display: flex;
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(2){
+    /* .buttdes */
+    display: flex;
+    
+    width:70%;
+    height: 40%;
+    /* border: 2px solid olive; */
+    
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+    /* .protext */
+    overflow-wrap: break-word;
+    overflow: hidden;
+    width: 80%;
+    height: 90%;
+    /* border: 2px solid palegreen; */
+    font-size: 13px;
+    
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+    /* proMRP */
+    text-align:right;
+    width: 20%;
+    height: 60%;
+    /* border: 2px solid brown; */
+    
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+    /* .qty */
+    
+    width: 40%;
+    height: 90%;
+    /* border: 2px solid chartreuse; */
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+    /* .remove */
+    margin-left: 40px;
+    color: gray;
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid steelblue; */
+}
+
+.outercart>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>select{
+
+    font-size: 10px;
+}
+
+.place_order{
+    border: none;
+    padding: 12px 40px;
+    margin-left: 140px;
+    margin-top: 20px;
+    background-color: #e40980;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>OTP</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png"
+      hreflang="en-in"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Otp.css">
+</head>
+
+<body>
+    
+    <div class="mainbox">
+        <div class="container">
+            <span class="verification">OTP Verification</span>
+            <span class="des">Enter OTP Sent to your Email Id</span>
+        </div>
+
+        <div class="otp">
+            <input id="first" maxlength=1 reqiured />
+            <input id="second" maxlength=1 reqiured />
+            <input id="third" maxlength=1 reqiured />
+            <input id="fourth" maxlength=1 reqiured />
+
+        </div>
+        <button>Submit</button>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click", check)
+
+    function check() {
+        var first = document.querySelector("#first").value;
+        var second = document.querySelector("#second").value;
+        var third = document.querySelector("#third").value;
+        var fourth = document.querySelector("#fourth").value;
+        arr = [first, second, third, fourth];
+        var otp = "";
+        for (var i = 0; i < arr.length; i++) {
+            otp = otp + arr[i];
+        }
+        if (otp === "1234") {
+           alert("OTP IS VALID")
+           document.querySelector(".mainbox").textContent="";
+           var div= document.createElement("div");
+           div.textContent="Thank You For Shopping......."
+           div.style.fontSize="25px";
+           div.style.color="red";
+           document.querySelector(".mainbox").append(div);
+           
+        }
+        else {
+            alert("Retry");
+            document.querySelector("#first").value = "";
+            document.querySelector("#second").value = "";
+            document.querySelector("#third").value = "";
+            document.querySelector("#fourth").value = "";
+        }
+    }
+</script>
