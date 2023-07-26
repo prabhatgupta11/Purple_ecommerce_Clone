@@ -39,6 +39,13 @@
         <div class="button_group" id="login_button">
           <a>Submit</a>
         </div>
+        <div id="oauth">
+           <p>OR</p>
+        </div>
+        <div id="googlepng">
+          <img src="./images/google.png" alt="">
+          <p>Continue with Google</p>
+        </div>
         <div class="fotter">
           <a>Forgot Password ?</a>
           <a href="home.html">
@@ -85,7 +92,10 @@
     });
 
 
-
+    let googlepng=document.getElementById("googlepng")
+googlepng.addEventListener("click",()=>{
+  alert("working")
+})
     </script>
 
     

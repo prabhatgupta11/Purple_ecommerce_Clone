@@ -15,9 +15,9 @@
   .login_form_container{
       position: relative;
       width: 400px;
-      height: 470px;
+      height: 600px;
       max-width: 400px;
-      max-height: 470px;
+      max-height: 600px;
       background: #040717;
       border-radius: 50px 5px;
       display: flex;
@@ -142,4 +142,24 @@
   .glowIcon {
       text-shadow: 0 0 10px #00ccff;
   
+  }
+  
+  #oauth p{
+   text-align: center;
+   padding: 20px;
+  }
+  #googlepng{
+    display: flex;
+    align-items: center;
+ 
+    text-align: center;
+    justify-content:5px;
+    gap: 10px;
+    padding: 0px 0px 0px 70px;
+    /* border: solid red; */
+  }
+  #googlepng img{
+    width: 20px;
+    height: 20px;
+
   }
